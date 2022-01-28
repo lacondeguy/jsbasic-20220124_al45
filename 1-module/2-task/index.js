@@ -1,16 +1,17 @@
-/**
- * Эту функцию трогать не нужно
- */
 function print(text) {
   console.log(text);
 }
 
-/**
- * Эту функцию нужно поменять так,
- * чтобы функция sayHello работала корректно
- */
-function isValid(name) {
-  // ваш код...
+function isValid(userName) {
+  if (userName != null || userName != undefined ) {
+      if (userName.length >= 4) {
+               for (let char of userName) {
+                     if (char == " "){
+                     return false;
+                     } 
+                } return true;
+      } return false; 
+   } return false; 
 }
 
 function sayHello() {
@@ -22,3 +23,5 @@ function sayHello() {
     print('Некорректное имя');
   }
 }
+
+sayHello();
