@@ -1,3 +1,13 @@
 function getMinMax(str) {
-  // ваш код...
+    let arr = str.split(" ");
+    let numbers = [];
+    let result = {};
+
+    for (let item of arr) {
+    isFinite(item) ? numbers.push(item) : "";
+    }
+
+result.min = Math.min(...numbers);
+result.max = Math.max(...numbers);
+return result;
 }
