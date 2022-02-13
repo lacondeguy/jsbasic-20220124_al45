@@ -4,7 +4,9 @@ function getMinMax(str) {
     let result = {};
 
     for (let item of arr) {
-    isFinite(item) ? numbers.push(item) : "";
+      if (isFinite(item)) {
+      numbers.push(item);
+      } 
     }
 
 result.min = Math.min(...numbers);
