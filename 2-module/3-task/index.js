@@ -1,11 +1,15 @@
 let calculator = {
-    read: (a, b) => { 
-    calculator.a = a;
-    calculator.b = b;
+    read: function (a, b) { 
+    return this.a = a, this.b = b;
     },
-    sum: () => calculator.a + calculator.b,
-    mul: () => calculator.a * calculator.b,
+    sum: function () {
+    return this.a + this.b;
+    }, 
+    mul: function () {
+    return this.a * this.b
+    },
 };
+
 
 // НЕ УДАЛЯТЬ СТРОКУ, НУЖНА ДЛЯ ПРОВЕРКИ
 window.calculator = calculator; // делает ваш калькулятор доступным глобально
