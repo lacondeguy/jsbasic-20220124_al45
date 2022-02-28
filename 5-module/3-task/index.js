@@ -1,5 +1,6 @@
 function initCarousel() {
 
+
 let carouselSlides = document.querySelector('.carousel__inner');
 let leftButton = document.querySelector('.carousel__arrow_left');
 let rightButton = document.querySelector('.carousel__arrow_right');
@@ -39,5 +40,4 @@ leftButton.addEventListener('click', () => {
   }
 
 });
-
 }
